@@ -2,13 +2,6 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.weather-app {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #eaf6f6;
-}
-
 h1 {
   color: #38598b;
   font-size: 30px;
@@ -26,4 +19,23 @@ li {
   font-size: 20px;
   font-weight: 100;
   line-height: 20px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #eaf6f6;
+  border-radius: 5px;
+}
+.overview {
+  margin-bottom: 20px;
+}
+.condition-img img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
 }
