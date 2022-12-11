@@ -3,9 +3,9 @@ body {
 }
 
 h1 {
-  color: #38598b;
+  color: #5585b5;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 28px;
 }
 ul {
@@ -34,8 +34,24 @@ li {
 .overview {
   margin-bottom: 20px;
 }
-.condition-img img {
-  margin-right: 10px;
+.weather-temperature img {
+  margin-right: 5px;
   height: 64px;
   width: 64px;
+}
+.weather-temperature strong {
+  color: #38598b;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+#fahrenheit {
+  text-decoration: none;
 }

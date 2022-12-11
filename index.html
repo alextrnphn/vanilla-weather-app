@@ -34,13 +34,18 @@
           </div>
           <div class="row">
             <div class="col">
-              <div class="condition-img">
+              <div class="d-flex weather-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="clear"
-                  class="float-left"
+                  id="icon"
                 />
-                <strong>45</strong>°C | F
+                <div class="temperature-degree">
+                  <strong>45</strong>
+                  <span class="units"
+                    >°C | <a href="#" id="fahrenheit">F</a></span
+                  >
+                </div>
               </div>
             </div>
             <div class="col">
