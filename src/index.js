@@ -1,5 +1,5 @@
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
+function formatDate() {
+  let date = new Date();
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let days = [
@@ -12,7 +12,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hours}: ${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
@@ -27,7 +27,7 @@ function displayTemperature(response) {
   conditionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = formatDate(response.data.dt);
 }
 
 let apiKey = "6f578b96aa9505bcce148ac22cb85794";
