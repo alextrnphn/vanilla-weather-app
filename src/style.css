@@ -52,6 +52,10 @@ li {
   font-size: 16px;
   top: -34px;
 }
+.weather-temperature .active {
+  color: #212529;
+  cursor: default;
+}
 .btn-primary {
   background: #5585b5;
   margin-left: -10px;
@@ -62,5 +66,8 @@ li {
 }
 
 #fahrenheit {
+  text-decoration: none;
+}
+#celsius {
   text-decoration: none;
 }
